@@ -38,7 +38,6 @@ Build the app - We could configure the CI to do this in an automated fashion
 #
 1. `git clone https://github.com/dragonspearsinc/kubernetes-2-tier`
 1. `cd kubernetes-2-tier`
-1. Optional - Build the frontend (this could be done by the CI) - `docker build -t dragonspears/backend ./springboot-crud`
 
 #
 Deploy the app
@@ -80,9 +79,8 @@ INSERT INTO `employee-schema`.`employee` (`emp_id`, `first_name`, `last_name`, `
 Test the deployment
 #
 
-![Browser](./support/Browser%203000.png)
-1. Open your *postman* to: `http://localhost:8080`
 
+1. Open your *postman* to: `http://localhost:8080/api/employees`
 ![Postman](./support/Postman%20Image%208080.png)
 
 ## Stop the application
