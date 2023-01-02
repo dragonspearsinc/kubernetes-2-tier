@@ -30,6 +30,7 @@ Standard 2-tier Spring / MySQL
 1.  Show info about running pod - `kubectl get pods -o wide`
 1.  Show configuration about pod - `kubectl describe pod {podname / id}`
 1.  Access the pod from your local machine - `kubectl port-forward {podname / id} {outside port}:{container port}` 
+1.  Check to see if vpnkit-controller is installed `kubectl get pods -n kube-system`
 
 ## First Time Process to run the application
 
